@@ -9,4 +9,6 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   # パスワードを暗号化して保存する
   has_secure_password
+  
+  has_many :tasks
 end
